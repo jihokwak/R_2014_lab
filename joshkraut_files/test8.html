@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://www.columbia.edu/~ih2240/dataviz/ggplot2_training/test8.html -->
+<html><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+
+  
+    
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="highcharts.js" type="text/javascript"></script>
+    <script src="highcharts-more.js" type="text/javascript"></script>
+    <script src="exporting.js" type="text/javascript"></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id="chart1213e50c16248" class="rChart highcharts" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 800px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="800" height="400"><desc>Created with Highcharts 4.0.4</desc><defs><clippath id="highcharts-1"><rect x="0" y="0" width="720" height="247"></rect></clippath></defs><rect x="0" y="0" width="800" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 70 61.5 L 790 61.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 70 123.5 L 790 123.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 70 185.5 L 790 185.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 70 246.5 L 790 246.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 70 308.5 L 790 308.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 199.5 308 L 199.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 270.5 308 L 270.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 342.5 308 L 342.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 414.5 308 L 414.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 486.5 308 L 486.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 558.5 308 L 558.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 630.5 308 L 630.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 702.5 308 L 702.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 774.5 308 L 774.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 127.5 308 L 127.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><text x="430" zIndex="7" text-anchor="middle" transform="translate(0,0)" class=" highcharts-xaxis-title" style="color:#707070;fill:#707070;" visibility="visible" y="345.96875">Height</text><path fill="none" d="M 70 308.5 L 790 308.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="24.125" zIndex="7" text-anchor="middle" transform="translate(0,0) rotate(270 24.125 184.5)" class=" highcharts-yaxis-title" style="color:#707070;fill:#707070;" visibility="visible" y="184.5">Pulse</text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(70,61) scale(1 1)" style="" clip-path="url(#highcharts-1)"><circle cx="56.716299019607895" cy="133.38" r="5.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="74.84681372549012" cy="111.14999999999998" r="14" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="86.35825163398702" cy="125.96999999999998" r="16.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="86.35825163398702" cy="125.96999999999998" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="86.35825163398702" cy="88.91999999999999" r="8.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="93.2651143790849" cy="140.79" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="129.81392973856234" cy="111.14999999999998" r="8" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="166.36274509803934" cy="160.55" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="187.08333333333343" cy="150.67" r="8" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="187.08333333333343" cy="150.67" r="9.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="187.08333333333343" cy="101.26999999999998" r="11.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="201.47263071895435" cy="190.19" r="8" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="201.47263071895435" cy="111.14999999999998" r="7.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="201.47263071895435" cy="81.50999999999999" r="9" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="202.91156045751637" cy="93.85999999999999" r="5.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="221.61764705882374" cy="130.91" r="18" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="223.05657679738573" cy="160.55" r="11.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="230.2512254901962" cy="135.85" r="9.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="239.46037581699338" cy="209.95" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="239.46037581699338" cy="135.85" r="6" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="239.46037581699338" cy="130.91" r="6" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="239.46037581699338" cy="86.44999999999999" r="5.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="244.6405228758171" cy="103.73999999999998" r="5.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="251.83517156862757" cy="98.79999999999998" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="261.907679738562" cy="160.55" r="14" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="273.41911764705895" cy="150.67" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="273.41911764705895" cy="140.79" r="9.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="273.41911764705895" cy="135.85" r="11.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="273.41911764705895" cy="123.49999999999999" r="8" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="273.41911764705895" cy="51.869999999999976" r="6" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="276.0091911764708" cy="123.49999999999999" r="10" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="276.0091911764708" cy="111.14999999999998" r="5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="302.1977124183008" cy="140.79" r="8.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="302.1977124183008" cy="140.79" r="11.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="302.1977124183008" cy="128.44" r="10.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="302.1977124183008" cy="81.50999999999999" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="312.5580065359478" cy="148.2" r="6" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="312.5580065359478" cy="140.79" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="312.5580065359478" cy="138.32" r="25" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="312.5580065359478" cy="121.02999999999999" r="17" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="316.5870098039217" cy="155.61" r="9.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="316.5870098039217" cy="121.02999999999999" r="11.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="330.97630718954264" cy="190.19" r="10" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="345.36560457516356" cy="130.91" r="9.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="345.36560457516356" cy="121.02999999999999" r="12" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="349.10682189542484" cy="155.61" r="7.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="349.10682189542484" cy="145.73" r="10" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="349.10682189542484" cy="140.79" r="8.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="366.9495506535949" cy="121.02999999999999" r="9.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="374.14419934640534" cy="121.02999999999999" r="7.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="374.14419934640534" cy="116.09" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="385.6556372549023" cy="155.61" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="388.53349673202626" cy="135.85" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="395.7281454248367" cy="145.73" r="7.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="402.9227941176472" cy="170.43" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="402.9227941176472" cy="160.55" r="10.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="402.9227941176472" cy="148.2" r="11" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="417.3120915032681" cy="163.01999999999998" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="417.3120915032681" cy="150.67" r="8" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="417.3120915032681" cy="116.09" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="417.3120915032681" cy="101.26999999999998" r="8.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="422.2044526143793" cy="150.67" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="422.2044526143793" cy="135.85" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="422.2044526143793" cy="130.91" r="7.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="422.2044526143793" cy="130.91" r="6" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="446.09068627450995" cy="148.2" r="9" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="453.2853349673204" cy="130.91" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="458.7532679738563" cy="130.91" r="8.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="458.7532679738563" cy="103.73999999999998" r="8" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="474.8692810457518" cy="61.74999999999997" r="9.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="489.2585784313727" cy="160.55" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="489.2585784313727" cy="140.79" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="489.2585784313727" cy="133.38" r="8.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="489.2585784313727" cy="91.38999999999999" r="8.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="495.3020833333333" cy="160.55" r="15.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="518.0371732026146" cy="145.73" r="9.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="518.0371732026146" cy="101.26999999999998" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="531.8508986928107" cy="150.67" r="11" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="531.8508986928107" cy="96.32999999999998" r="9" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="532.4264705882355" cy="123.49999999999999" r="8.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="561.2050653594773" cy="145.73" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="561.2050653594773" cy="140.79" r="6.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="561.2050653594773" cy="140.79" r="8.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="568.3997140522878" cy="130.91" r="7" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="633.1515522875819" cy="121.02999999999999" r="12.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="647.5408496732028" cy="153.14" r="9.5" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle><circle cx="705.0980392156864" cy="172.89999999999998" r="8" stroke="#7cb5ec" stroke-width="1" fill="rgba(124,181,236,0.5)"></circle></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(70,61) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(70,61) scale(1 1)" style="" clip-path="url(#highcharts-1)"><circle cx="93.2651143790849" cy="135.85" r="5.5" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="100.74754901960793" cy="135.85" r="9.5" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="129.52614379084977" cy="96.32999999999998" r="9.5" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="201.47263071895435" cy="185.25" r="15" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="201.47263071895435" cy="148.2" r="8" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="201.47263071895435" cy="69.16" r="9" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="230.2512254901962" cy="140.79" r="8" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="230.2512254901962" cy="111.14999999999998" r="7.5" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="273.41911764705895" cy="160.55" r="7" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="273.41911764705895" cy="71.63" r="8.5" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="359.7549019607844" cy="140.79" r="8.5" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="385.6556372549023" cy="51.869999999999976" r="6.5" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="422.2044526143793" cy="140.79" r="19" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle><circle cx="568.3997140522878" cy="111.14999999999998" r="7.5" stroke="#434348" stroke-width="1" fill="rgba(67,67,72,0.5)"></circle></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(70,61) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(70,61) scale(1 1)" style="" clip-path="url(#highcharts-1)"><circle cx="14.41176470588243" cy="86.44999999999999" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="20.167483660130877" cy="81.50999999999999" r="11.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="35.99571078431381" cy="121.02999999999999" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="56.716299019607895" cy="130.91" r="5.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="57.57965686274518" cy="145.73" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="115.13684640522885" cy="135.85" r="11" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="129.52614379084977" cy="125.96999999999998" r="5.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="129.52614379084977" cy="101.26999999999998" r="8" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="129.52614379084977" cy="91.38999999999999" r="4" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="129.81392973856234" cy="148.2" r="15.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="129.81392973856234" cy="130.91" r="6" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="165.49938725490208" cy="113.61999999999998" r="6" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="166.36274509803934" cy="135.85" r="7" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="166.36274509803934" cy="135.85" r="5.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="166.36274509803934" cy="91.38999999999999" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="172.69403594771254" cy="113.61999999999998" r="12" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="172.69403594771254" cy="111.14999999999998" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="172.69403594771254" cy="103.73999999999998" r="6" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="187.08333333333343" cy="111.14999999999998" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="201.47263071895435" cy="222.3" r="11.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="201.47263071895435" cy="148.2" r="9.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="201.47263071895435" cy="135.85" r="9" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="201.47263071895435" cy="121.02999999999999" r="11.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="201.47263071895435" cy="121.02999999999999" r="13" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="201.47263071895435" cy="91.38999999999999" r="7" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="202.91156045751637" cy="140.79" r="5.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="202.91156045751637" cy="98.79999999999998" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="230.2512254901962" cy="158.07999999999998" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="230.2512254901962" cy="121.02999999999999" r="6" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="230.2512254901962" cy="113.61999999999998" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="230.2512254901962" cy="86.44999999999999" r="11" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="239.46037581699338" cy="125.96999999999998" r="19" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="244.6405228758171" cy="160.55" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="244.6405228758171" cy="130.91" r="10" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="244.6405228758171" cy="108.67999999999998" r="8" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="257.590890522876" cy="140.79" r="5.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="259.02982026143803" cy="111.14999999999998" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="273.41911764705895" cy="135.85" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="273.41911764705895" cy="111.14999999999998" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="273.41911764705895" cy="111.14999999999998" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="276.0091911764708" cy="116.09" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="276.0091911764708" cy="111.14999999999998" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="287.8084150326799" cy="140.79" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="287.8084150326799" cy="61.74999999999997" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="302.1977124183008" cy="160.55" r="14" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="312.5580065359478" cy="150.67" r="10" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="312.5580065359478" cy="86.44999999999999" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="316.5870098039217" cy="81.50999999999999" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="345.36560457516356" cy="130.91" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="345.36560457516356" cy="101.26999999999998" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="345.36560457516356" cy="86.44999999999999" r="8" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="349.10682189542484" cy="98.79999999999998" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="366.9495506535949" cy="111.14999999999998" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="388.53349673202626" cy="160.55" r="8" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="404.3617238562092" cy="111.14999999999998" r="8" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="404.3617238562092" cy="81.50999999999999" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="417.3120915032681" cy="160.55" r="13.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="417.3120915032681" cy="135.85" r="5.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="417.3120915032681" cy="71.63" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="422.2044526143793" cy="143.26" r="7" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="458.7532679738563" cy="125.96999999999998" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="458.7532679738563" cy="111.14999999999998" r="8" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="460.47998366013087" cy="123.49999999999999" r="9" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="460.47998366013087" cy="86.44999999999999" r="5.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="474.8692810457518" cy="155.61" r="7.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="489.2585784313727" cy="123.49999999999999" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="489.2585784313727" cy="111.14999999999998" r="16.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="546.8157679738564" cy="86.44999999999999" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="587.1058006535951" cy="130.91" r="6.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle><circle cx="604.9485294117648" cy="103.73999999999998" r="8.5" stroke="#90ed7d" stroke-width="1" fill="rgba(144,237,125,0.5)"></circle></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(70,61) scale(1 1)" clip-path="none"></g></g><text x="400" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:736px;" y="25"><tspan>bubble demo</tspan></text><text x="400" text-anchor="middle" class="highcharts-subtitle" zIndex="4" style="color:#555555;fill:#555555;width:736px;" y="46"><tspan>bubble chart</tspan></text><g class="highcharts-legend" zIndex="7" transform="translate(298,368)"><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2" y="15">Freq</text><circle cx="6" cy="9" r="6" zIndex="3" fill="rgba(124,181,236,0.5)" stroke="#7cb5ec" stroke-width="1"></circle></g><g class="highcharts-legend-item" zIndex="1" transform="translate(76.328125,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2">None</text><circle cx="6" cy="9" r="6" zIndex="3" fill="rgba(67,67,72,0.5)" stroke="#434348" stroke-width="1"></circle></g><g class="highcharts-legend-item" zIndex="1" transform="translate(149.140625,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2">Some</text><circle cx="6" cy="9" r="6" zIndex="3" fill="rgba(144,237,125,0.5)" stroke="#90ed7d" stroke-width="1"></circle></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="127.57965686274518" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">155</text><text x="199.52614379084977" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">160</text><text x="271.47263071895435" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">165</text><text x="343.41911764705895" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">170</text><text x="415.36560457516356" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">175</text><text x="487.3120915032681" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">180</text><text x="559.2585784313727" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">185</text><text x="631.2050653594773" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">190</text><text x="703.1515522875819" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">195</text><text x="775.0980392156864" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">200</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="251.765625" opacity="1">50</text><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="128.26562499999997" opacity="1">100</text><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="313.515625" opacity="1">25</text><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="190.015625" opacity="1">75</text><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="66.51562499999997" opacity="1">125</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)"><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="21"></text></g><text x="790" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395"></text></svg></div></div>  
+    
+    <script type="text/javascript">
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ "dom": "chart1213e50c16248",
+"width":            800,
+"height":            400,
+"credits": {
+ "href": null,
+"text": null 
+},
+"exporting": {
+ "enabled": false 
+},
+"title": {
+ "text": "bubble demo" 
+},
+"yAxis": [
+ {
+ "title": {
+ "text": "Pulse" 
+} 
+} 
+],
+"series": [
+ {
+ "data": [
+ [
+         154.94,
+71,
+        17.167 
+],
+[
+          156.2,
+80,
+          28.5 
+],
+[
+            157,
+74,
+        35.833 
+],
+[
+            157,
+74,
+            18 
+],
+[
+            157,
+89,
+        19.333 
+],
+[
+         157.48,
+68,
+         17.75 
+],
+[
+         160.02,
+80,
+          18.5 
+],
+[
+         162.56,
+60,
+        17.417 
+],
+[
+            164,
+64,
+        18.583 
+],
+[
+            164,
+64,
+        20.167 
+],
+[
+            164,
+84,
+        23.083 
+],
+[
+            165,
+48,
+        18.667 
+],
+[
+            165,
+80,
+        18.167 
+],
+[
+            165,
+92,
+            20 
+],
+[
+          165.1,
+87,
+        17.083 
+],
+[
+          166.4,
+72,
+         39.75 
+],
+[
+          166.5,
+60,
+         23.25 
+],
+[
+            167,
+70,
+        20.333 
+],
+[
+         167.64,
+40,
+        17.417 
+],
+[
+         167.64,
+70,
+        17.333 
+],
+[
+         167.64,
+72,
+        17.333 
+],
+[
+         167.64,
+90,
+        17.167 
+],
+[
+            168,
+83,
+        17.083 
+],
+[
+          168.5,
+85,
+         17.75 
+],
+[
+          169.2,
+60,
+        29.083 
+],
+[
+            170,
+64,
+        17.583 
+],
+[
+            170,
+68,
+        20.667 
+],
+[
+            170,
+70,
+        23.833 
+],
+[
+            170,
+75,
+         18.75 
+],
+[
+            170,
+104,
+         17.25 
+],
+[
+         170.18,
+75,
+        21.167 
+],
+[
+         170.18,
+80,
+            17 
+],
+[
+            172,
+68,
+        19.167 
+],
+[
+            172,
+68,
+        23.417 
+],
+[
+            172,
+73,
+          21.5 
+],
+[
+            172,
+92,
+          17.5 
+],
+[
+         172.72,
+65,
+         17.25 
+],
+[
+         172.72,
+68,
+        17.667 
+],
+[
+         172.72,
+69,
+        70.417 
+],
+[
+         172.72,
+76,
+        36.583 
+],
+[
+            173,
+62,
+        20.333 
+],
+[
+            173,
+76,
+        23.583 
+],
+[
+            174,
+48,
+        21.333 
+],
+[
+            175,
+72,
+        20.167 
+],
+[
+            175,
+76,
+        24.167 
+],
+[
+         175.26,
+62,
+        18.083 
+],
+[
+         175.26,
+66,
+            21 
+],
+[
+         175.26,
+68,
+        19.083 
+],
+[
+          176.5,
+76,
+        20.167 
+],
+[
+            177,
+76,
+         18.25 
+],
+[
+            177,
+78,
+        17.917 
+],
+[
+          177.8,
+62,
+        17.667 
+],
+[
+            178,
+70,
+          17.5 
+],
+[
+          178.5,
+66,
+        18.083 
+],
+[
+            179,
+56,
+        17.417 
+],
+[
+            179,
+60,
+        21.583 
+],
+[
+            179,
+65,
+        22.833 
+],
+[
+            180,
+59,
+        17.417 
+],
+[
+            180,
+64,
+        18.583 
+],
+[
+            180,
+78,
+          17.5 
+],
+[
+            180,
+84,
+        18.917 
+],
+[
+         180.34,
+64,
+        17.833 
+],
+[
+         180.34,
+70,
+        17.417 
+],
+[
+         180.34,
+72,
+        18.167 
+],
+[
+         180.34,
+72,
+        17.333 
+],
+[
+            182,
+65,
+            20 
+],
+[
+          182.5,
+72,
+        17.917 
+],
+[
+         182.88,
+72,
+        19.333 
+],
+[
+         182.88,
+83,
+        18.833 
+],
+[
+            184,
+100,
+        20.083 
+],
+[
+            185,
+60,
+        17.917 
+],
+[
+            185,
+68,
+        17.417 
+],
+[
+            185,
+71,
+        19.333 
+],
+[
+            185,
+88,
+        19.333 
+],
+[
+         185.42,
+60,
+        32.667 
+],
+[
+            187,
+66,
+        20.333 
+],
+[
+            187,
+84,
+        17.917 
+],
+[
+         187.96,
+64,
+            23 
+],
+[
+         187.96,
+86,
+            20 
+],
+[
+            188,
+75,
+        18.917 
+],
+[
+            190,
+66,
+            18 
+],
+[
+            190,
+68,
+          17.5 
+],
+[
+            190,
+68,
+        19.417 
+],
+[
+          190.5,
+72,
+        17.917 
+],
+[
+            195,
+76,
+          25.5 
+],
+[
+            196,
+63,
+        20.083 
+],
+[
+            200,
+55,
+          18.5 
+] 
+],
+"name": "Freq",
+"type": "bubble",
+"marker": {
+ "radius":              3 
+} 
+},
+{
+ "data": [
+ [
+         157.48,
+70,
+        17.167 
+],
+[
+            158,
+70,
+          20.5 
+],
+[
+            160,
+86,
+        20.167 
+],
+[
+            165,
+50,
+         30.75 
+],
+[
+            165,
+65,
+          18.5 
+],
+[
+            165,
+97,
+          19.5 
+],
+[
+            167,
+68,
+        18.667 
+],
+[
+            167,
+80,
+        18.417 
+],
+[
+            170,
+60,
+         17.75 
+],
+[
+            170,
+96,
+        19.417 
+],
+[
+            176,
+68,
+        18.917 
+],
+[
+          177.8,
+104,
+        17.583 
+],
+[
+         180.34,
+68,
+        43.833 
+],
+[
+          190.5,
+80,
+        18.167 
+] 
+],
+"name": "None",
+"type": "bubble",
+"marker": {
+ "radius":              3 
+} 
+},
+{
+ "data": [
+ [
+            152,
+90,
+        18.333 
+],
+[
+          152.4,
+92,
+          23.5 
+],
+[
+          153.5,
+76,
+        17.417 
+],
+[
+         154.94,
+72,
+        17.083 
+],
+[
+            155,
+66,
+          17.5 
+],
+[
+            159,
+70,
+        22.917 
+],
+[
+            160,
+74,
+        17.167 
+],
+[
+            160,
+84,
+        18.583 
+],
+[
+            160,
+88,
+        16.917 
+],
+[
+         160.02,
+65,
+         32.75 
+],
+[
+         160.02,
+72,
+         17.25 
+],
+[
+          162.5,
+79,
+         17.25 
+],
+[
+         162.56,
+70,
+            18 
+],
+[
+         162.56,
+70,
+        17.167 
+],
+[
+         162.56,
+88,
+        18.167 
+],
+[
+            163,
+79,
+        24.667 
+],
+[
+            163,
+80,
+        17.667 
+],
+[
+            163,
+83,
+         17.25 
+],
+[
+            164,
+80,
+          17.5 
+],
+[
+            165,
+35,
+        23.667 
+],
+[
+            165,
+65,
+        20.417 
+],
+[
+            165,
+70,
+        19.667 
+],
+[
+            165,
+76,
+        23.583 
+],
+[
+            165,
+76,
+          26.5 
+],
+[
+            165,
+88,
+         17.75 
+],
+[
+          165.1,
+68,
+        17.083 
+],
+[
+          165.1,
+85,
+        17.667 
+],
+[
+            167,
+61,
+         19.25 
+],
+[
+            167,
+76,
+         17.25 
+],
+[
+            167,
+79,
+         19.25 
+],
+[
+            167,
+90,
+        22.333 
+],
+[
+         167.64,
+74,
+         44.25 
+],
+[
+            168,
+60,
+        18.417 
+],
+[
+            168,
+72,
+        21.167 
+],
+[
+            168,
+81,
+          18.5 
+],
+[
+          168.9,
+68,
+        17.083 
+],
+[
+            169,
+80,
+        18.167 
+],
+[
+            170,
+70,
+        18.167 
+],
+[
+            170,
+80,
+         18.25 
+],
+[
+            170,
+80,
+        19.167 
+],
+[
+         170.18,
+78,
+        18.333 
+],
+[
+         170.18,
+80,
+        18.417 
+],
+[
+            171,
+68,
+        17.667 
+],
+[
+            171,
+100,
+        18.917 
+],
+[
+            172,
+60,
+        28.583 
+],
+[
+         172.72,
+64,
+            21 
+],
+[
+         172.72,
+90,
+          17.5 
+],
+[
+            173,
+92,
+         18.25 
+],
+[
+            175,
+72,
+            19 
+],
+[
+            175,
+84,
+          17.5 
+],
+[
+            175,
+90,
+         18.75 
+],
+[
+         175.26,
+85,
+        18.417 
+],
+[
+          176.5,
+80,
+          17.5 
+],
+[
+            178,
+60,
+         18.75 
+],
+[
+          179.1,
+80,
+        18.667 
+],
+[
+          179.1,
+92,
+        18.917 
+],
+[
+            180,
+60,
+        27.333 
+],
+[
+            180,
+70,
+        17.167 
+],
+[
+            180,
+96,
+            19 
+],
+[
+         180.34,
+67,
+         17.75 
+],
+[
+         182.88,
+74,
+        18.333 
+],
+[
+         182.88,
+80,
+        18.667 
+],
+[
+            183,
+75,
+        19.667 
+],
+[
+            183,
+90,
+        17.167 
+],
+[
+            184,
+62,
+         18.25 
+],
+[
+            185,
+75,
+            19 
+],
+[
+            185,
+80,
+          35.5 
+],
+[
+            189,
+90,
+        19.167 
+],
+[
+          191.8,
+72,
+          17.5 
+],
+[
+         193.04,
+83,
+        18.917 
+] 
+],
+"name": "Some",
+"type": "bubble",
+"marker": {
+ "radius":              3 
+} 
+} 
+],
+"xAxis": [
+ {
+ "title": {
+ "text": "Height" 
+} 
+} 
+],
+"subtitle": {
+ "text": "bubble chart" 
+},
+"chart": {
+ "zoomType": "xy",
+"renderTo": "chart1213e50c16248" 
+},
+"id": "chart1213e50c16248" 
+});
+        });
+    })(jQuery);
+</script>
+    
+  
+
+</body></html>

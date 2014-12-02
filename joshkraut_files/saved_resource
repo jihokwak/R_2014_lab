@@ -1,0 +1,10 @@
+if (window['google'] != undefined && window['google']['loader'] != undefined) {
+if (!window['google']['visualization']) {
+window['google']['visualization'] = {};
+google.visualization.Version = '1.0';
+google.visualization.JSHash = '024a3754c1aad8a9d002d9ecb8235c67';
+google.visualization.LoadArgs = 'file\75visualization\46v\0751\46packages\75corechart%2Cgeochart%2Cmotionchart\46async\0752';
+}
+google.loader.writeLoadTag("css", google.loader.ServiceBase + "/api/visualization/1.0/024a3754c1aad8a9d002d9ecb8235c67/ui+ko.css", true);
+google.loader.writeLoadTag("script", google.loader.ServiceBase + "/api/visualization/1.0/024a3754c1aad8a9d002d9ecb8235c67/format+ko,default+ko,ui+ko,geochart+ko,motionchart+ko,corechart+ko.I.js", true);
+}

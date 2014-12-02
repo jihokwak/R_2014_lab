@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://www.columbia.edu/~ih2240/dataviz/ggplot2_training/test7.html -->
+<html><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+
+  
+    
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="highcharts.js" type="text/javascript"></script>
+    <script src="highcharts-more.js" type="text/javascript"></script>
+    <script src="exporting.js" type="text/javascript"></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id="chart1213e51aa7d67" class="rChart highcharts" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 800px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="800" height="400"><desc>Created with Highcharts 4.0.4</desc><defs><clippath id="highcharts-1"><rect x="0" y="0" width="720" height="298"></rect></clippath></defs><rect x="0" y="0" width="800" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><path fill="rgba(144,237,125,0.25)" d="M 0 0"></path><path fill="rgba(67,67,72,0.25)" d="M 0 0"></path><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 70 9.5 L 790 9.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 70 70.5 L 790 70.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 70 129.5 L 790 129.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 70 189.5 L 790 189.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 70 248.5 L 790 248.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 70 308.5 L 790 308.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 194.5 308 L 194.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 267.5 308 L 267.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 341.5 308 L 341.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 414.5 308 L 414.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 488.5 308 L 488.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 561.5 308 L 561.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 635.5 308 L 635.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 708.5 308 L 708.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 782.5 308 L 782.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 120.5 308 L 120.5 318" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><text x="430" zIndex="7" text-anchor="middle" transform="translate(0,0)" class=" highcharts-xaxis-title" style="color:#707070;fill:#707070;" visibility="visible" y="345.96875">Height</text><path fill="none" d="M 70 308.5 L 790 308.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="24.125" zIndex="7" text-anchor="middle" transform="translate(0,0) rotate(270 24.125 159)" class=" highcharts-yaxis-title" style="color:#707070;fill:#707070;" visibility="visible" y="159">Pulse</text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(70,10) scale(1 1)" clip-path="url(#highcharts-1)"></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(70,10) scale(1 1)" clip-path="none" style=""><path fill="#7cb5ec" d="M 712 190.7 C 715.996 190.7 715.996 196.7 712 196.7 C 708.004 196.7 708.004 190.7 712 190.7 Z"></path><path fill="#7cb5ec" d="M 654 166.86 C 657.996 166.86 657.996 172.86 654 172.86 C 650.004 172.86 650.004 166.86 654 166.86 Z"></path><path fill="#7cb5ec" d="M 639 128.12 C 642.996 128.12 642.996 134.12 639 134.12 C 635.004 134.12 635.004 128.12 639 128.12 Z"></path><path fill="#7cb5ec" d="M 573 140.04 C 576.996 140.04 576.996 146.04 573 146.04 C 569.004 146.04 569.004 140.04 573 140.04 Z"></path><path fill="#7cb5ec" d="M 565 151.96 C 568.996 151.96 568.996 157.96 565 157.96 C 561.004 157.96 561.004 151.96 565 151.96 Z"></path><path fill="#7cb5ec" d="M 565 151.96 C 568.996 151.96 568.996 157.96 565 157.96 C 561.004 157.96 561.004 151.96 565 151.96 Z"></path><path fill="#7cb5ec" d="M 565 157.92 C 568.996 157.92 568.996 163.92 565 163.92 C 561.004 163.92 561.004 157.92 565 157.92 Z"></path><path fill="#7cb5ec" d="M 536 131.1 C 539.996 131.1 539.996 137.1 536 137.1 C 532.004 137.1 532.004 131.1 536 131.1 Z"></path><path fill="#7cb5ec" d="M 535 98.32 C 538.996 98.32 538.996 104.32 535 104.32 C 531.004 104.32 531.004 98.32 535 98.32 Z"></path><path fill="#7cb5ec" d="M 535 163.88 C 538.996 163.88 538.996 169.88 535 169.88 C 531.004 169.88 531.004 163.88 535 163.88 Z"></path><path fill="#7cb5ec" d="M 521 104.28 C 524.996 104.28 524.996 110.28 521 110.28 C 517.004 110.28 517.004 104.28 521 104.28 Z"></path><path fill="#7cb5ec" d="M 521 157.92 C 524.996 157.92 524.996 163.92 521 163.92 C 517.004 163.92 517.004 157.92 521 157.92 Z"></path><path fill="#7cb5ec" d="M 498 175.8 C 501.996 175.8 501.996 181.8 498 181.8 C 494.004 181.8 494.004 175.8 498 175.8 Z"></path><path fill="#7cb5ec" d="M 492 92.36000000000001 C 495.996 92.36000000000001 495.996 98.36000000000001 492 98.36000000000001 C 488.004 98.36000000000001 488.004 92.36000000000001 492 92.36000000000001 Z"></path><path fill="#7cb5ec" d="M 492 143.02 C 495.996 143.02 495.996 149.02 492 149.02 C 488.004 149.02 488.004 143.02 492 143.02 Z"></path><path fill="#7cb5ec" d="M 492 151.96 C 495.996 151.96 495.996 157.96 492 157.96 C 488.004 157.96 488.004 151.96 492 151.96 Z"></path><path fill="#7cb5ec" d="M 492 175.8 C 495.996 175.8 495.996 181.8 492 181.8 C 488.004 181.8 488.004 175.8 492 175.8 Z"></path><path fill="#7cb5ec" d="M 477 56.599999999999994 C 480.996 56.599999999999994 480.996 62.599999999999994 477 62.599999999999994 C 473.004 62.599999999999994 473.004 56.599999999999994 477 56.599999999999994 Z"></path><path fill="#7cb5ec" d="M 461 107.25999999999999 C 464.996 107.25999999999999 464.996 113.25999999999999 461 113.25999999999999 C 457.004 113.25999999999999 457.004 107.25999999999999 461 107.25999999999999 Z"></path><path fill="#7cb5ec" d="M 461 140.04 C 464.996 140.04 464.996 146.04 461 146.04 C 457.004 146.04 457.004 140.04 461 140.04 Z"></path><path fill="#7cb5ec" d="M 455 140.04 C 458.996 140.04 458.996 146.04 455 146.04 C 451.004 146.04 451.004 140.04 455 140.04 Z"></path><path fill="#7cb5ec" d="M 448 160.9 C 451.996 160.9 451.996 166.9 448 166.9 C 444.004 166.9 444.004 160.9 448 160.9 Z"></path><path fill="#7cb5ec" d="M 423 140.04 C 426.996 140.04 426.996 146.04 423 146.04 C 419.004 146.04 419.004 140.04 423 140.04 Z"></path><path fill="#7cb5ec" d="M 423 140.04 C 426.996 140.04 426.996 146.04 423 146.04 C 419.004 146.04 419.004 140.04 423 140.04 Z"></path><path fill="#7cb5ec" d="M 423 146 C 426.996 146 426.996 152 423 152 C 419.004 152 419.004 146 423 146 Z"></path><path fill="#7cb5ec" d="M 423 163.88 C 426.996 163.88 426.996 169.88 423 169.88 C 419.004 169.88 419.004 163.88 423 163.88 Z"></path><path fill="#7cb5ec" d="M 418 104.28 C 421.996 104.28 421.996 110.28 418 110.28 C 414.004 110.28 414.004 104.28 418 104.28 Z"></path><path fill="#7cb5ec" d="M 418 122.16 C 421.996 122.16 421.996 128.16 418 128.16 C 414.004 128.16 414.004 122.16 418 122.16 Z"></path><path fill="#7cb5ec" d="M 418 163.88 C 421.996 163.88 421.996 169.88 418 169.88 C 414.004 169.88 414.004 163.88 418 163.88 Z"></path><path fill="#7cb5ec" d="M 418 178.78 C 421.996 178.78 421.996 184.78 418 184.78 C 414.004 184.78 414.004 178.78 418 178.78 Z"></path><path fill="#7cb5ec" d="M 404 160.9 C 407.996 160.9 407.996 166.9 404 166.9 C 400.004 166.9 400.004 160.9 404 160.9 Z"></path><path fill="#7cb5ec" d="M 404 175.8 C 407.996 175.8 407.996 181.8 404 181.8 C 400.004 181.8 400.004 175.8 404 175.8 Z"></path><path fill="#7cb5ec" d="M 404 187.72 C 407.996 187.72 407.996 193.72 404 193.72 C 400.004 193.72 400.004 187.72 404 187.72 Z"></path><path fill="#7cb5ec" d="M 396 157.92 C 399.996 157.92 399.996 163.92 396 163.92 C 392.004 163.92 392.004 157.92 396 157.92 Z"></path><path fill="#7cb5ec" d="M 389 146 C 392.996 146 392.996 152 389 152 C 385.004 152 385.004 146 389 146 Z"></path><path fill="#7cb5ec" d="M 386 169.84 C 389.996 169.84 389.996 175.84 386 175.84 C 382.004 175.84 382.004 169.84 386 169.84 Z"></path><path fill="#7cb5ec" d="M 374 122.16 C 377.996 122.16 377.996 128.16 374 128.16 C 370.004 128.16 370.004 122.16 374 122.16 Z"></path><path fill="#7cb5ec" d="M 374 128.12 C 377.996 128.12 377.996 134.12 374 134.12 C 370.004 134.12 370.004 128.12 374 128.12 Z"></path><path fill="#7cb5ec" d="M 367 128.12 C 370.996 128.12 370.996 134.12 367 134.12 C 363.004 134.12 363.004 128.12 367 128.12 Z"></path><path fill="#7cb5ec" d="M 349 151.96 C 352.996 151.96 352.996 157.96 349 157.96 C 345.004 157.96 345.004 151.96 349 151.96 Z"></path><path fill="#7cb5ec" d="M 349 157.92 C 352.996 157.92 352.996 163.92 349 163.92 C 345.004 163.92 345.004 157.92 349 157.92 Z"></path><path fill="#7cb5ec" d="M 349 169.84 C 352.996 169.84 352.996 175.84 349 175.84 C 345.004 175.84 345.004 169.84 349 169.84 Z"></path><path fill="#7cb5ec" d="M 345 128.12 C 348.996 128.12 348.996 134.12 345 134.12 C 341.004 134.12 341.004 128.12 345 128.12 Z"></path><path fill="#7cb5ec" d="M 345 140.04 C 348.996 140.04 348.996 146.04 345 146.04 C 341.004 146.04 341.004 140.04 345 140.04 Z"></path><path fill="#7cb5ec" d="M 330 211.56 C 333.996 211.56 333.996 217.56 330 217.56 C 326.004 217.56 326.004 211.56 330 211.56 Z"></path><path fill="#7cb5ec" d="M 315 128.12 C 318.996 128.12 318.996 134.12 315 134.12 C 311.004 134.12 311.004 128.12 315 128.12 Z"></path><path fill="#7cb5ec" d="M 315 169.84 C 318.996 169.84 318.996 175.84 315 175.84 C 311.004 175.84 311.004 169.84 315 169.84 Z"></path><path fill="#7cb5ec" d="M 311 128.12 C 314.996 128.12 314.996 134.12 311 134.12 C 307.004 134.12 307.004 128.12 311 128.12 Z"></path><path fill="#7cb5ec" d="M 311 148.98 C 314.996 148.98 314.996 154.98 311 154.98 C 307.004 154.98 307.004 148.98 311 148.98 Z"></path><path fill="#7cb5ec" d="M 311 151.96 C 314.996 151.96 314.996 157.96 311 157.96 C 307.004 157.96 307.004 151.96 311 151.96 Z"></path><path fill="#7cb5ec" d="M 311 160.9 C 314.996 160.9 314.996 166.9 311 166.9 C 307.004 166.9 307.004 160.9 311 160.9 Z"></path><path fill="#7cb5ec" d="M 301 80.44 C 304.996 80.44 304.996 86.44 301 86.44 C 297.004 86.44 297.004 80.44 301 80.44 Z"></path><path fill="#7cb5ec" d="M 301 137.06 C 304.996 137.06 304.996 143.06 301 143.06 C 297.004 143.06 297.004 137.06 301 137.06 Z"></path><path fill="#7cb5ec" d="M 301 151.96 C 304.996 151.96 304.996 157.96 301 157.96 C 297.004 157.96 297.004 151.96 301 151.96 Z"></path><path fill="#7cb5ec" d="M 301 151.96 C 304.996 151.96 304.996 157.96 301 157.96 C 297.004 157.96 297.004 151.96 301 151.96 Z"></path><path fill="#7cb5ec" d="M 274 116.19999999999999 C 277.996 116.19999999999999 277.996 122.19999999999999 274 122.19999999999999 C 270.004 122.19999999999999 270.004 116.19999999999999 274 116.19999999999999 Z"></path><path fill="#7cb5ec" d="M 274 131.1 C 277.996 131.1 277.996 137.1 274 137.1 C 270.004 137.1 270.004 131.1 274 131.1 Z"></path><path fill="#7cb5ec" d="M 271 44.68000000000001 C 274.996 44.68000000000001 274.996 50.68000000000001 271 50.68000000000001 C 267.004 50.68000000000001 267.004 44.68000000000001 271 44.68000000000001 Z"></path><path fill="#7cb5ec" d="M 271 131.1 C 274.996 131.1 274.996 137.1 271 137.1 C 267.004 137.1 267.004 131.1 271 131.1 Z"></path><path fill="#7cb5ec" d="M 271 146 C 274.996 146 274.996 152 271 152 C 267.004 152 267.004 146 271 146 Z"></path><path fill="#7cb5ec" d="M 271 151.96 C 274.996 151.96 274.996 157.96 271 157.96 C 267.004 157.96 267.004 151.96 271 151.96 Z"></path><path fill="#7cb5ec" d="M 271 163.88 C 274.996 163.88 274.996 169.88 271 169.88 C 267.004 169.88 267.004 163.88 271 163.88 Z"></path><path fill="#7cb5ec" d="M 259 175.8 C 262.996 175.8 262.996 181.8 259 181.8 C 255.004 181.8 255.004 175.8 259 175.8 Z"></path><path fill="#7cb5ec" d="M 249 101.30000000000001 C 252.996 101.30000000000001 252.996 107.30000000000001 249 107.30000000000001 C 245.004 107.30000000000001 245.004 101.30000000000001 249 101.30000000000001 Z"></path><path fill="#7cb5ec" d="M 242 107.25999999999999 C 245.996 107.25999999999999 245.996 113.25999999999999 242 113.25999999999999 C 238.004 113.25999999999999 238.004 107.25999999999999 242 107.25999999999999 Z"></path><path fill="#7cb5ec" d="M 237 86.4 C 240.996 86.4 240.996 92.4 237 92.4 C 233.004 92.4 233.004 86.4 237 86.4 Z"></path><path fill="#7cb5ec" d="M 237 140.04 C 240.996 140.04 240.996 146.04 237 146.04 C 233.004 146.04 233.004 140.04 237 140.04 Z"></path><path fill="#7cb5ec" d="M 237 146 C 240.996 146 240.996 152 237 152 C 233.004 152 233.004 146 237 146 Z"></path><path fill="#7cb5ec" d="M 237 235.4 C 240.996 235.4 240.996 241.4 237 241.4 C 233.004 241.4 233.004 235.4 237 235.4 Z"></path><path fill="#7cb5ec" d="M 227 146 C 230.996 146 230.996 152 227 152 C 223.004 152 223.004 146 227 146 Z"></path><path fill="#7cb5ec" d="M 220 175.8 C 223.996 175.8 223.996 181.8 220 181.8 C 216.004 181.8 216.004 175.8 220 175.8 Z"></path><path fill="#7cb5ec" d="M 218 140.04 C 221.996 140.04 221.996 146.04 218 146.04 C 214.004 146.04 214.004 140.04 218 140.04 Z"></path><path fill="#7cb5ec" d="M 199 95.34 C 202.996 95.34 202.996 101.34 199 101.34 C 195.004 101.34 195.004 95.34 199 95.34 Z"></path><path fill="#7cb5ec" d="M 198 80.44 C 201.996 80.44 201.996 86.44 198 86.44 C 194.004 86.44 194.004 80.44 198 80.44 Z"></path><path fill="#7cb5ec" d="M 198 116.19999999999999 C 201.996 116.19999999999999 201.996 122.19999999999999 198 122.19999999999999 C 194.004 122.19999999999999 194.004 116.19999999999999 198 116.19999999999999 Z"></path><path fill="#7cb5ec" d="M 198 211.56 C 201.996 211.56 201.996 217.56 198 217.56 C 194.004 217.56 194.004 211.56 198 211.56 Z"></path><path fill="#7cb5ec" d="M 183 104.28 C 186.996 104.28 186.996 110.28 183 110.28 C 179.004 110.28 179.004 104.28 183 104.28 Z"></path><path fill="#7cb5ec" d="M 183 163.88 C 186.996 163.88 186.996 169.88 183 169.88 C 179.004 169.88 179.004 163.88 183 163.88 Z"></path><path fill="#7cb5ec" d="M 183 163.88 C 186.996 163.88 186.996 169.88 183 169.88 C 179.004 169.88 179.004 163.88 183 163.88 Z"></path><path fill="#7cb5ec" d="M 162 175.8 C 165.996 175.8 165.996 181.8 162 181.8 C 158.004 181.8 158.004 175.8 162 175.8 Z"></path><path fill="#7cb5ec" d="M 125 116.19999999999999 C 128.996 116.19999999999999 128.996 122.19999999999999 125 122.19999999999999 C 121.004 122.19999999999999 121.004 116.19999999999999 125 116.19999999999999 Z"></path><path fill="#7cb5ec" d="M 87 151.96 C 90.996 151.96 90.996 157.96 87 157.96 C 83.004 157.96 83.004 151.96 87 151.96 Z"></path><path fill="#7cb5ec" d="M 80 89.38 C 83.996 89.38 83.996 95.38 80 95.38 C 76.004 95.38 76.004 89.38 80 89.38 Z"></path><path fill="#7cb5ec" d="M 80 134.08 C 83.996 134.08 83.996 140.08 80 140.08 C 76.004 140.08 76.004 134.08 80 134.08 Z"></path><path fill="#7cb5ec" d="M 80 134.08 C 83.996 134.08 83.996 140.08 80 140.08 C 76.004 140.08 76.004 134.08 80 134.08 Z"></path><path fill="#7cb5ec" d="M 68 116.19999999999999 C 71.996 116.19999999999999 71.996 122.19999999999999 68 122.19999999999999 C 64.004 122.19999999999999 64.004 116.19999999999999 68 116.19999999999999 Z"></path><path fill="#7cb5ec" d="M 50 143.02 C 53.996 143.02 53.996 149.02 50 149.02 C 46.004 149.02 46.004 143.02 50 143.02 Z"></path></g><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(70,10) scale(1 1)" clip-path="url(#highcharts-1)"></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(70,10) scale(1 1)" clip-path="none" style=""><path fill="#434348" d="M 573 116.19999999999999 L 576 119.19999999999999 573 122.19999999999999 570 119.19999999999999 Z"></path><path fill="#434348" d="M 423 151.96 L 426 154.96 423 157.96 420 154.96 Z"></path><path fill="#434348" d="M 386 44.68000000000001 L 389 47.68000000000001 386 50.68000000000001 383 47.68000000000001 Z"></path><path fill="#434348" d="M 360 151.96 L 363 154.96 360 157.96 357 154.96 Z"></path><path fill="#434348" d="M 271 68.52000000000001 L 274 71.52000000000001 271 74.52000000000001 268 71.52000000000001 Z"></path><path fill="#434348" d="M 271 175.8 L 274 178.8 271 181.8 268 178.8 Z"></path><path fill="#434348" d="M 227 116.19999999999999 L 230 119.19999999999999 227 122.19999999999999 224 119.19999999999999 Z"></path><path fill="#434348" d="M 227 151.96 L 230 154.96 227 157.96 224 154.96 Z"></path><path fill="#434348" d="M 198.235294117647 65.53999999999999 L 201.235294117647 68.53999999999999 198.235294117647 71.53999999999999 195.235294117647 68.53999999999999 Z" stroke-width="1"></path><path fill="#434348" d="M 198 160.9 L 201 163.9 198 166.9 195 163.9 Z"></path><path fill="#434348" d="M 198 205.6 L 201 208.6 198 211.6 195 208.6 Z"></path><path fill="#434348" d="M 124 98.32 L 127 101.32 124 104.32 121 101.32 Z"></path><path fill="#434348" d="M 95 146 L 98 149 95 152 92 149 Z"></path><path fill="#434348" d="M 87 146 L 90 149 87 152 84 149 Z"></path></g><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(70,10) scale(1 1)" clip-path="url(#highcharts-1)"></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(70,10) scale(1 1)" clip-path="none" style=""><path fill="#90ed7d" d="M 607 107.25999999999999 L 613 107.25999999999999 613 113.25999999999999 607 113.25999999999999 Z"></path><path fill="#90ed7d" d="M 589 140.04 L 595 140.04 595 146.04 589 146.04 Z"></path><path fill="#90ed7d" d="M 548 86.4 L 554 86.4 554 92.4 548 92.4 Z"></path><path fill="#90ed7d" d="M 489 116.19999999999999 L 495 116.19999999999999 495 122.19999999999999 489 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 489 131.1 L 495 131.1 495 137.1 489 137.1 Z"></path><path fill="#90ed7d" d="M 474 169.84 L 480 169.84 480 175.84 474 175.84 Z"></path><path fill="#90ed7d" d="M 459 86.4 L 465 86.4 465 92.4 459 92.4 Z"></path><path fill="#90ed7d" d="M 459 131.1 L 465 131.1 465 137.1 459 137.1 Z"></path><path fill="#90ed7d" d="M 458 116.19999999999999 L 464 116.19999999999999 464 122.19999999999999 458 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 458 134.08 L 464 134.08 464 140.08 458 140.08 Z"></path><path fill="#90ed7d" d="M 420 154.94 L 426 154.94 426 160.94 420 160.94 Z"></path><path fill="#90ed7d" d="M 415 68.52000000000001 L 421 68.52000000000001 421 74.52000000000001 415 74.52000000000001 Z"></path><path fill="#90ed7d" d="M 415 146 L 421 146 421 152 415 152 Z"></path><path fill="#90ed7d" d="M 415 175.8 L 421 175.8 421 181.8 415 181.8 Z"></path><path fill="#90ed7d" d="M 402 80.44 L 408 80.44 408 86.44 402 86.44 Z"></path><path fill="#90ed7d" d="M 402 116.19999999999999 L 408 116.19999999999999 408 122.19999999999999 402 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 386 175.8 L 392 175.8 392 181.8 386 181.8 Z"></path><path fill="#90ed7d" d="M 364 116.19999999999999 L 370 116.19999999999999 370 122.19999999999999 364 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 346 101.30000000000001 L 352 101.30000000000001 352 107.30000000000001 346 107.30000000000001 Z"></path><path fill="#90ed7d" d="M 342 86.4 L 348 86.4 348 92.4 342 92.4 Z"></path><path fill="#90ed7d" d="M 342.29411764705884 104.28 L 348.29411764705884 104.28 348.29411764705884 110.28 342.29411764705884 110.28 Z" stroke-width="1"></path><path fill="#90ed7d" d="M 342 140.04 L 348 140.04 348 146.04 342 146.04 Z"></path><path fill="#90ed7d" d="M 312 80.44 L 318 80.44 318 86.44 312 86.44 Z"></path><path fill="#90ed7d" d="M 308 86.4 L 314 86.4 314 92.4 308 92.4 Z"></path><path fill="#90ed7d" d="M 308 163.88 L 314 163.88 314 169.88 308 169.88 Z"></path><path fill="#90ed7d" d="M 298 175.8 L 304 175.8 304 181.8 298 181.8 Z"></path><path fill="#90ed7d" d="M 283 56.599999999999994 L 289 56.599999999999994 289 62.599999999999994 283 62.599999999999994 Z"></path><path fill="#90ed7d" d="M 283 151.96 L 289 151.96 289 157.96 283 157.96 Z"></path><path fill="#90ed7d" d="M 271 116.19999999999999 L 277 116.19999999999999 277 122.19999999999999 271 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 271 122.16 L 277 122.16 277 128.16 271 128.16 Z"></path><path fill="#90ed7d" d="M 268 116.19999999999999 L 274 116.19999999999999 274 122.19999999999999 268 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 268 116.19999999999999 L 274 116.19999999999999 274 122.19999999999999 268 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 268 146 L 274 146 274 152 268 152 Z"></path><path fill="#90ed7d" d="M 254 116.19999999999999 L 260 116.19999999999999 260 122.19999999999999 254 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 252 151.96 L 258 151.96 258 157.96 252 157.96 Z"></path><path fill="#90ed7d" d="M 239 113.22 L 245 113.22 245 119.22 239 119.22 Z"></path><path fill="#90ed7d" d="M 239 140.04 L 245 140.04 245 146.04 239 146.04 Z"></path><path fill="#90ed7d" d="M 239 175.8 L 245 175.8 245 181.8 239 181.8 Z"></path><path fill="#90ed7d" d="M 234 134.08 L 240 134.08 240 140.08 234 140.08 Z"></path><path fill="#90ed7d" d="M 224 86.4 L 230 86.4 230 92.4 224 92.4 Z"></path><path fill="#90ed7d" d="M 224 119.18 L 230 119.18 230 125.18 224 125.18 Z"></path><path fill="#90ed7d" d="M 224 128.12 L 230 128.12 230 134.12 224 134.12 Z"></path><path fill="#90ed7d" d="M 224 172.82 L 230 172.82 230 178.82 224 178.82 Z"></path><path fill="#90ed7d" d="M 196 101.30000000000001 L 202 101.30000000000001 202 107.30000000000001 196 107.30000000000001 Z"></path><path fill="#90ed7d" d="M 196 151.96 L 202 151.96 202 157.96 196 157.96 Z"></path><path fill="#90ed7d" d="M 195 92.36000000000001 L 201 92.36000000000001 201 98.36000000000001 195 98.36000000000001 Z"></path><path fill="#90ed7d" d="M 195 128.12 L 201 128.12 201 134.12 195 134.12 Z"></path><path fill="#90ed7d" d="M 195 128.12 L 201 128.12 201 134.12 195 134.12 Z"></path><path fill="#90ed7d" d="M 195 146 L 201 146 201 152 195 152 Z"></path><path fill="#90ed7d" d="M 195 160.9 L 201 160.9 201 166.9 195 166.9 Z"></path><path fill="#90ed7d" d="M 195 250.3 L 201 250.3 201 256.3 195 256.3 Z"></path><path fill="#90ed7d" d="M 180 116.19999999999999 L 186 116.19999999999999 186 122.19999999999999 180 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 165 107.25999999999999 L 171 107.25999999999999 171 113.25999999999999 165 113.25999999999999 Z"></path><path fill="#90ed7d" d="M 165 116.19999999999999 L 171 116.19999999999999 171 122.19999999999999 165 122.19999999999999 Z"></path><path fill="#90ed7d" d="M 165 119.18 L 171 119.18 171 125.18 165 125.18 Z"></path><path fill="#90ed7d" d="M 159 92.36000000000001 L 165 92.36000000000001 165 98.36000000000001 159 98.36000000000001 Z"></path><path fill="#90ed7d" d="M 159 146 L 165 146 165 152 159 152 Z"></path><path fill="#90ed7d" d="M 159 146 L 165 146 165 152 159 152 Z"></path><path fill="#90ed7d" d="M 158 119.18 L 164 119.18 164 125.18 158 125.18 Z"></path><path fill="#90ed7d" d="M 122 140.04 L 128 140.04 128 146.04 122 146.04 Z"></path><path fill="#90ed7d" d="M 122 160.9 L 128 160.9 128 166.9 122 166.9 Z"></path><path fill="#90ed7d" d="M 121 92.36000000000001 L 127 92.36000000000001 127 98.36000000000001 121 98.36000000000001 Z"></path><path fill="#90ed7d" d="M 121 104.28 L 127 104.28 127 110.28 121 110.28 Z"></path><path fill="#90ed7d" d="M 121 134.08 L 127 134.08 127 140.08 121 140.08 Z"></path><path fill="#90ed7d" d="M 106 146 L 112 146 112 152 106 152 Z"></path><path fill="#90ed7d" d="M 48 157.92 L 54 157.92 54 163.92 48 163.92 Z"></path><path fill="#90ed7d" d="M 47 140.04 L 53 140.04 53 146.04 47 146.04 Z"></path><path fill="#90ed7d" d="M 26 128.12 L 32 128.12 32 134.12 26 134.12 Z"></path><path fill="#90ed7d" d="M 9 80.44 L 15 80.44 15 86.44 9 86.44 Z"></path><path fill="#90ed7d" d="M 4 86.4 L 10 86.4 10 92.4 4 92.4 Z"></path></g></g><g class="highcharts-legend" zIndex="7" transform="translate(298,368)"><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><path fill="#7cb5ec" d="M 8 8 C 11.996 8 11.996 14 8 14 C 4.004 14 4.004 8 8 8 Z"></path><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2" y="15">Freq</text></g><g class="highcharts-legend-item" zIndex="1" transform="translate(76.328125,3)"><path fill="#434348" d="M 8 8 L 11 11 8 14 5 11 Z"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2">None</text></g><g class="highcharts-legend-item" zIndex="1" transform="translate(149.140625,3)"><path fill="#90ed7d" d="M 5 8 L 11 8 11 14 5 14 Z"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2">Some</text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="121.17647058823516" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">155</text><text x="194.70588235294107" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">160</text><text x="268.23529411764696" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">165</text><text x="341.7647058823529" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">170</text><text x="415.29411764705884" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">175</text><text x="488.82352941176475" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">180</text><text x="562.3529411764707" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">185</text><text x="635.8823529411766" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">190</text><text x="709.4117647058824" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">195</text><text x="782.9411764705884" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="328" opacity="1">200</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="253.91562499999998" opacity="1">40</text><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="194.315625" opacity="1">60</text><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="134.715625" opacity="1">80</text><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="75.115625" opacity="1">100</text><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="313.515625" opacity="1">20</text><text x="55" text-anchor="end" style="width:244px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="15.515625" opacity="1">120</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(241,-9999)" opacity="0" visibility="visible"><path fill="none" d="M 3.5 0.5 L 52.5 0.5 C 55.5 0.5 55.5 0.5 55.5 3.5 L 55.5 59.5 C 55.5 62.5 55.5 62.5 52.5 62.5 L 33.5 62.5 27.5 68.5 21.5 62.5 3.5 62.5 C 0.5 62.5 0.5 62.5 0.5 59.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)" width="55" height="62"></path><path fill="none" d="M 3.5 0.5 L 52.5 0.5 C 55.5 0.5 55.5 0.5 55.5 3.5 L 55.5 59.5 C 55.5 62.5 55.5 62.5 52.5 62.5 L 33.5 62.5 27.5 68.5 21.5 62.5 3.5 62.5 C 0.5 62.5 0.5 62.5 0.5 59.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)" width="55" height="62"></path><path fill="none" d="M 3.5 0.5 L 52.5 0.5 C 55.5 0.5 55.5 0.5 55.5 3.5 L 55.5 59.5 C 55.5 62.5 55.5 62.5 52.5 62.5 L 33.5 62.5 27.5 68.5 21.5 62.5 3.5 62.5 C 0.5 62.5 0.5 62.5 0.5 59.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)" width="55" height="62"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 52.5 0.5 C 55.5 0.5 55.5 0.5 55.5 3.5 L 55.5 59.5 C 55.5 62.5 55.5 62.5 52.5 62.5 L 33.5 62.5 27.5 68.5 21.5 62.5 3.5 62.5 C 0.5 62.5 0.5 62.5 0.5 59.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#434348" stroke-width="1"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="21"><tspan style="fill:#434348">●</tspan><tspan style="font-size: 10px;" dx="0"> None</tspan><tspan x="8" dy="16">x: </tspan><tspan style="font-weight:bold" dx="0">165</tspan><tspan x="8" dy="16">y: </tspan><tspan style="font-weight:bold" dx="0">97</tspan></text></g><text x="790" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395"></text></svg></div></div>  
+    
+    <script type="text/javascript">
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ "dom": "chart1213e51aa7d67",
+"width":            800,
+"height":            400,
+"credits": {
+ "href": null,
+"text": null 
+},
+"exporting": {
+ "enabled": false 
+},
+"title": {
+ "text": null 
+},
+"yAxis": [
+ {
+ "title": {
+ "text": "Pulse" 
+} 
+} 
+],
+"series": [
+ {
+ "data": [
+ [
+         154.94,
+71 
+],
+[
+          156.2,
+80 
+],
+[
+            157,
+74 
+],
+[
+            157,
+74 
+],
+[
+            157,
+89 
+],
+[
+         157.48,
+68 
+],
+[
+         160.02,
+80 
+],
+[
+         162.56,
+60 
+],
+[
+            164,
+64 
+],
+[
+            164,
+64 
+],
+[
+            164,
+84 
+],
+[
+            165,
+48 
+],
+[
+            165,
+80 
+],
+[
+            165,
+92 
+],
+[
+          165.1,
+87 
+],
+[
+          166.4,
+72 
+],
+[
+          166.5,
+60 
+],
+[
+            167,
+70 
+],
+[
+         167.64,
+40 
+],
+[
+         167.64,
+70 
+],
+[
+         167.64,
+72 
+],
+[
+         167.64,
+90 
+],
+[
+            168,
+83 
+],
+[
+          168.5,
+85 
+],
+[
+          169.2,
+60 
+],
+[
+            170,
+64 
+],
+[
+            170,
+68 
+],
+[
+            170,
+70 
+],
+[
+            170,
+75 
+],
+[
+            170,
+104 
+],
+[
+         170.18,
+75 
+],
+[
+         170.18,
+80 
+],
+[
+            172,
+68 
+],
+[
+            172,
+68 
+],
+[
+            172,
+73 
+],
+[
+            172,
+92 
+],
+[
+         172.72,
+65 
+],
+[
+         172.72,
+68 
+],
+[
+         172.72,
+69 
+],
+[
+         172.72,
+76 
+],
+[
+            173,
+62 
+],
+[
+            173,
+76 
+],
+[
+            174,
+48 
+],
+[
+            175,
+72 
+],
+[
+            175,
+76 
+],
+[
+         175.26,
+62 
+],
+[
+         175.26,
+66 
+],
+[
+         175.26,
+68 
+],
+[
+          176.5,
+76 
+],
+[
+            177,
+76 
+],
+[
+            177,
+78 
+],
+[
+          177.8,
+62 
+],
+[
+            178,
+70 
+],
+[
+          178.5,
+66 
+],
+[
+            179,
+56 
+],
+[
+            179,
+60 
+],
+[
+            179,
+65 
+],
+[
+            180,
+59 
+],
+[
+            180,
+64 
+],
+[
+            180,
+78 
+],
+[
+            180,
+84 
+],
+[
+         180.34,
+64 
+],
+[
+         180.34,
+70 
+],
+[
+         180.34,
+72 
+],
+[
+         180.34,
+72 
+],
+[
+            182,
+65 
+],
+[
+          182.5,
+72 
+],
+[
+         182.88,
+72 
+],
+[
+         182.88,
+83 
+],
+[
+            184,
+100 
+],
+[
+            185,
+60 
+],
+[
+            185,
+68 
+],
+[
+            185,
+71 
+],
+[
+            185,
+88 
+],
+[
+         185.42,
+60 
+],
+[
+            187,
+66 
+],
+[
+            187,
+84 
+],
+[
+         187.96,
+64 
+],
+[
+         187.96,
+86 
+],
+[
+            188,
+75 
+],
+[
+            190,
+66 
+],
+[
+            190,
+68 
+],
+[
+            190,
+68 
+],
+[
+          190.5,
+72 
+],
+[
+            195,
+76 
+],
+[
+            196,
+63 
+],
+[
+            200,
+55 
+] 
+],
+"name": "Freq",
+"type": "scatter",
+"marker": {
+ "radius":              3 
+} 
+},
+{
+ "data": [
+ [
+         157.48,
+70 
+],
+[
+            158,
+70 
+],
+[
+            160,
+86 
+],
+[
+            165,
+50 
+],
+[
+            165,
+65 
+],
+[
+            165,
+97 
+],
+[
+            167,
+68 
+],
+[
+            167,
+80 
+],
+[
+            170,
+60 
+],
+[
+            170,
+96 
+],
+[
+            176,
+68 
+],
+[
+          177.8,
+104 
+],
+[
+         180.34,
+68 
+],
+[
+          190.5,
+80 
+] 
+],
+"name": "None",
+"type": "scatter",
+"marker": {
+ "radius":              3 
+} 
+},
+{
+ "data": [
+ [
+            152,
+90 
+],
+[
+          152.4,
+92 
+],
+[
+          153.5,
+76 
+],
+[
+         154.94,
+72 
+],
+[
+            155,
+66 
+],
+[
+            159,
+70 
+],
+[
+            160,
+74 
+],
+[
+            160,
+84 
+],
+[
+            160,
+88 
+],
+[
+         160.02,
+65 
+],
+[
+         160.02,
+72 
+],
+[
+          162.5,
+79 
+],
+[
+         162.56,
+70 
+],
+[
+         162.56,
+70 
+],
+[
+         162.56,
+88 
+],
+[
+            163,
+79 
+],
+[
+            163,
+80 
+],
+[
+            163,
+83 
+],
+[
+            164,
+80 
+],
+[
+            165,
+35 
+],
+[
+            165,
+65 
+],
+[
+            165,
+70 
+],
+[
+            165,
+76 
+],
+[
+            165,
+76 
+],
+[
+            165,
+88 
+],
+[
+          165.1,
+68 
+],
+[
+          165.1,
+85 
+],
+[
+            167,
+61 
+],
+[
+            167,
+76 
+],
+[
+            167,
+79 
+],
+[
+            167,
+90 
+],
+[
+         167.64,
+74 
+],
+[
+            168,
+60 
+],
+[
+            168,
+72 
+],
+[
+            168,
+81 
+],
+[
+          168.9,
+68 
+],
+[
+            169,
+80 
+],
+[
+            170,
+70 
+],
+[
+            170,
+80 
+],
+[
+            170,
+80 
+],
+[
+         170.18,
+78 
+],
+[
+         170.18,
+80 
+],
+[
+            171,
+68 
+],
+[
+            171,
+100 
+],
+[
+            172,
+60 
+],
+[
+         172.72,
+64 
+],
+[
+         172.72,
+90 
+],
+[
+            173,
+92 
+],
+[
+            175,
+72 
+],
+[
+            175,
+84 
+],
+[
+            175,
+90 
+],
+[
+         175.26,
+85 
+],
+[
+          176.5,
+80 
+],
+[
+            178,
+60 
+],
+[
+          179.1,
+80 
+],
+[
+          179.1,
+92 
+],
+[
+            180,
+60 
+],
+[
+            180,
+70 
+],
+[
+            180,
+96 
+],
+[
+         180.34,
+67 
+],
+[
+         182.88,
+74 
+],
+[
+         182.88,
+80 
+],
+[
+            183,
+75 
+],
+[
+            183,
+90 
+],
+[
+            184,
+62 
+],
+[
+            185,
+75 
+],
+[
+            185,
+80 
+],
+[
+            189,
+90 
+],
+[
+          191.8,
+72 
+],
+[
+         193.04,
+83 
+] 
+],
+"name": "Some",
+"type": "scatter",
+"marker": {
+ "radius":              3 
+} 
+} 
+],
+"xAxis": [
+ {
+ "title": {
+ "text": "Height" 
+} 
+} 
+],
+"subtitle": {
+ "text": null 
+},
+"id": "chart1213e51aa7d67",
+"chart": {
+ "renderTo": "chart1213e51aa7d67" 
+} 
+});
+        });
+    })(jQuery);
+</script>
+    
+  
+
+</body></html>

@@ -1,0 +1,6 @@
+par(mfrow=c(1, 2))
+map('world',region=c('South Korea', 'North Korea'))
+title("Korea map in maps packages")
+library(mapdata)
+map('worldHires', region=c('South Korea', 'North Korea'))
+title("Korea map in mapdata packages")

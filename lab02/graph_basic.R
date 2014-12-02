@@ -1,0 +1,8 @@
+par(mfrow=c(2,2))
+par(family="NanumGothicCoding")
+v<-c(0.1,0.3,0.2,0.4)
+names(v)<-c("a","b","c","d")
+barplot(v)
+pie(v)
+hist(v)
+plot(v,pch=16)

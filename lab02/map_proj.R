@@ -1,0 +1,6 @@
+library("mapproj")
+m <- map("world", plot=FALSE)
+map('world', proj='azequalarea', orient=c(37, 132, 0))
+map.grid(m, col = 2)
+points(mapproject(list(y=37, x= 132)), col="blue", pch="x", cex=1)
+title("독도는 우리땅")

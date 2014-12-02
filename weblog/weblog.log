@@ -1,0 +1,4 @@
+66.12.71.25 - - [21/Feb/2012 23:44:11] "GET /course/1894/detail HTTP/1.1" 200 7017 5.0829
+66.12.71.21 - - [21/Feb/2012 23:44:39] "GET /search_by_author?search_learn_exp=Khan+Academy&page=193 HTTP/1.1" 200 8019 0.3288
+66.12.71.25 - - [21/Feb/2012 23:45:21] "GET /course/19/detail HTTP/1.1" 200 6851 0.1213
+18.4.5.14 - - [21/Feb/2012 23:45:59] "GET /search_by_subject?search_learn_exp=algebra-i-worked-examples HTTP/1.1" 200 7939 0.0370

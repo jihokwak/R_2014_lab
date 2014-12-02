@@ -1,0 +1,438 @@
+<!-- GeoChart generated in R 3.1.0 by googleVis 0.5.6 package -->
+<!-- Tue Dec  2 18:36:56 2014 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataGeoChartID469e8b660f () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Germany",
+3 
+],
+[
+ "Brazil",
+4 
+],
+[
+ "United States",
+5 
+],
+[
+ "France",
+4 
+],
+[
+ "Hungary",
+3 
+],
+[
+ "India",
+2 
+],
+[
+ "Iceland",
+1 
+],
+[
+ "Norway",
+4 
+],
+[
+ "Spain",
+5 
+],
+[
+ "Turkey",
+1 
+] 
+];
+data.addColumn('string','Country');
+data.addColumn('number','Profit');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataBarChartID46961d96a3e () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Germany",
+3 
+],
+[
+ "Brazil",
+4 
+],
+[
+ "United States",
+5 
+],
+[
+ "France",
+4 
+],
+[
+ "Hungary",
+3 
+],
+[
+ "India",
+2 
+],
+[
+ "Iceland",
+1 
+],
+[
+ "Norway",
+4 
+],
+[
+ "Spain",
+5 
+],
+[
+ "Turkey",
+1 
+] 
+];
+data.addColumn('string','Country');
+data.addColumn('number','Profit');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataMotionChartID4698ce3ea2 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Apples",
+2008,
+"West",
+98,
+78,
+20,
+"2008-12-31" 
+],
+[
+ "Apples",
+2009,
+"West",
+111,
+79,
+32,
+"2009-12-31" 
+],
+[
+ "Apples",
+2010,
+"West",
+89,
+76,
+13,
+"2010-12-31" 
+],
+[
+ "Oranges",
+2008,
+"East",
+96,
+81,
+15,
+"2008-12-31" 
+],
+[
+ "Bananas",
+2008,
+"East",
+85,
+76,
+9,
+"2008-12-31" 
+],
+[
+ "Oranges",
+2009,
+"East",
+93,
+80,
+13,
+"2009-12-31" 
+],
+[
+ "Bananas",
+2009,
+"East",
+94,
+78,
+16,
+"2009-12-31" 
+],
+[
+ "Oranges",
+2010,
+"East",
+98,
+91,
+7,
+"2010-12-31" 
+],
+[
+ "Bananas",
+2010,
+"East",
+81,
+71,
+10,
+"2010-12-31" 
+] 
+];
+data.addColumn('string','Fruit');
+data.addColumn('number','Year');
+data.addColumn('string','Location');
+data.addColumn('number','Sales');
+data.addColumn('number','Expenses');
+data.addColumn('number','Profit');
+data.addColumn('string','Date');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartGeoChartID469e8b660f() {
+var data = gvisDataGeoChartID469e8b660f();
+var options = {};
+options["width"] =    250;
+options["height"] =    120;
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID469e8b660f')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartBarChartID46961d96a3e() {
+var data = gvisDataBarChartID46961d96a3e();
+var options = {};
+options["allowHtml"] = true;
+options["width"] =    250;
+options["height"] =    260;
+options["legend"] = "none";
+
+
+    var chart = new google.visualization.BarChart(
+    document.getElementById('BarChartID46961d96a3e')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartMotionChartID4698ce3ea2() {
+var data = gvisDataMotionChartID4698ce3ea2();
+var options = {};
+options["width"] =    400;
+options["height"] =    380;
+options["state"] = "";
+
+
+    var chart = new google.visualization.MotionChart(
+    document.getElementById('MotionChartID4698ce3ea2')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID469e8b660f);
+})();
+function displayChartGeoChartID469e8b660f() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartBarChartID46961d96a3e);
+})();
+function displayChartBarChartID46961d96a3e() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "motionchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartMotionChartID4698ce3ea2);
+})();
+function displayChartMotionChartID4698ce3ea2() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID469e8b660f"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartID46961d96a3e"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID4698ce3ea2"></script>
+ 
+<table cellspacing=5>
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<!-- divChart -->
+  
+<div id="GeoChartID469e8b660f" 
+  style="width: 250; height: 120;">
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<!-- divChart -->
+  
+<div id="BarChartID46961d96a3e" 
+  style="width: 250; height: 260;">
+</div>
+
+</td>
+</tr>
+</table>
+
+</td>
+<td>
+
+<!-- divChart -->
+  
+<div id="MotionChartID4698ce3ea2" 
+  style="width: 400; height: 380;">
+</div>
+
+</td>
+</tr>
+</table>
